@@ -1,3 +1,7 @@
-<div class="product-image" {{on "click" @toggleZoom}}>
-  <img src="{{@src}}" alt="beats" />
+<div class="product-image">
+  {{#if @toggleZoom}}
+    <img src={{@src}} alt="beats" {{on "click" @toggleZoom}} />
+  {{else}}
+    <img src={{@src}} alt="beats" />
+  {{/if}}
 </div>
