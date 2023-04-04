@@ -10,6 +10,10 @@
       </li>
       <li class="breadcrumb-item">Shopping Cart</li>
     </ol>
+
+    {{#each this.cart.itemList as |item|}}
+      <h4>{{item.name}}</h4>
+    {{/each}}
     <section class="w-50 ml-auto text-right mb-5">
       <div class="row">
         <span class="col">Subtotal</span>
